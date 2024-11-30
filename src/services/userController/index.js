@@ -1,1 +1,1 @@
-export { getIdFromJWT, getPurchasedGames, getRecommendations } from './auth';
+export { getIdFromJWT, getPurchasedGames, getRecommendations, getSeasonalRecommendations } from './auth';

@@ -6,4 +6,4 @@ export {
     deleteGame,
     purchaseGame
 } from './gameController';
-export { getIdFromJWT, getPurchasedGames, getRecommendations } from './userController';
+export { getIdFromJWT, getPurchasedGames, getRecommendations, getSeasonalRecommendations } from './userController';

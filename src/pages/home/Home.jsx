@@ -39,13 +39,11 @@ export const Home = () => {
             <h1>Home</h1>
             <p>Welcome to the home page</p>
 
-            <a href="/purchase">
-                Purchases
-            </a>
-
-            <a href="/recommendations">
-                Recommendations
-            </a>
+            <nav>
+                <a href="/purchase">Purchases</a>
+                <a href="/recommendations">Recommendations</a>
+                <a href="/seasonal">Seasonal Recommendations</a> {/* Add this link */}
+            </nav>
 
             {loading && <p>Loading...</p>}
 
@@ -54,8 +52,8 @@ export const Home = () => {
             <ul>
                 {games.map((game) => (
                     // name, description, price, tags
-                    <>
-                        <li key={game.id}>
+                    <div key={game.id}>
+                        <li>
                             <h2>{game.name}</h2>
                             <p>{game.description}</p>
                             <p>{game.price}</p>
@@ -78,11 +76,10 @@ export const Home = () => {
                                 </ul>
                             )}
                         </li>
-
                         <button onClick={() => handleAddGame(game.id)}>Add to cart</button>
-                    </>
+                    </div>
                 ))}
             </ul>
         </>
-    )
-}
+    );
+};

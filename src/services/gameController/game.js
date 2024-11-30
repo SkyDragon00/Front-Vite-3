@@ -37,3 +37,10 @@ export const purchaseGame = async(userId, gameId) => {
 
     return response.data;
 }
+
+export const getSeasonalRecommendations = async () => {
+    const api = getApi();
+    const response = await api.get('/game/season/current'); // Match this with your backend endpoint
+
+    return response.data;
+};

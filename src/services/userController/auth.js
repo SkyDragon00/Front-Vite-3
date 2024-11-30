@@ -54,3 +54,14 @@ export const getRecommendations = async (userId) => {
         throw error;
     }
 };
+export const getSeasonalRecommendations = async () => {
+    const api = getApi();
+
+    try {
+        const response = await api.get('/game/season/current'); // Backend endpoint for seasonal recommendations
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching seasonal recommendations:', error);
+        throw error;
+    }
+};

@@ -10,5 +10,6 @@ export {
 export {
     Home,
     Purchase,
-    Recommendations
+    Recommendations,
+    Seasonal
 } from './home';

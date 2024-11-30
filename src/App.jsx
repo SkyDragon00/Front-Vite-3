@@ -8,7 +8,8 @@ import {
   AdminAddGame,
   AdminDeleteGame,
   Purchase,
-  Recommendations
+  Recommendations,
+  Seasonal
 } from './pages';
 
 export const App = () => {
@@ -21,6 +22,7 @@ export const App = () => {
         <Route path='/home' element={<Home />} />
         <Route path='/purchase' element={<Purchase />} />
         <Route path='/recommendations' element={<Recommendations />} />
+        <Route path='/seasonal' element={<Seasonal />} />
         <Route path='/admin' element={<Admin />} />
         <Route path='/admin/add-game' element={<AdminAddGame />} />
         <Route path='/admin/delete-game' element={<AdminDeleteGame />} />

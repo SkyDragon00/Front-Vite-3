@@ -3,5 +3,6 @@ export {
     getGameById,
     addGame,
     deleteGame,
-    purchaseGame
+    purchaseGame,
+    getSeasonalRecommendations
 } from './game';
