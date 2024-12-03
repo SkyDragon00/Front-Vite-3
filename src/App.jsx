@@ -9,7 +9,8 @@ import {
   AdminDeleteGame,
   Purchase,
   Recommendations,
-  Seasonal
+  Seasonal,
+  AdminDateReport
 } from './pages';
 
 export const App = () => {
@@ -26,6 +27,7 @@ export const App = () => {
         <Route path='/admin' element={<Admin />} />
         <Route path='/admin/add-game' element={<AdminAddGame />} />
         <Route path='/admin/delete-game' element={<AdminDeleteGame />} />
+        <Route path="/admin/date-report" element={<AdminDateReport />} />
       </Route>
     </Routes>
   )

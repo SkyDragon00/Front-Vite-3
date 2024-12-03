@@ -17,6 +17,7 @@ export const Admin = () => {
 
             <a href="/admin/add-game">Agregar nuevo juego</a>
             <a href="/admin/delete-game">Ver todos los juegos para eliminar</a>
+            <a href="/admin/date-report">View Date Report</a>
 
             <h2>Juegos</h2>
 

@@ -1,7 +1,8 @@
 export {
     Admin,
     AdminAddGame,
-    AdminDeleteGame
+    AdminDeleteGame,
+    AdminDateReport
 } from './admin';
 export {
     Login,
