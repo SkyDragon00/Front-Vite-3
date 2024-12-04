@@ -16,7 +16,7 @@ import {
 export const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Login />} />
+      <Route path="/prueba" element={<Login />} />
       <Route path="/register" element={<Register />} />
 
       <Route element={<PrivateRoute />}>
