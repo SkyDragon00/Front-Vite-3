@@ -12,7 +12,7 @@ export const AdminDateReport = () => {
             const response = await axios.get('http://localhost:8000/api/game/date-report', {
                 params: { startDate, endDate },
             });
-            console.log('API Response:', response.data); // Log the response
+            console.log('API Response:', response.data);
             setReportData(response.data);
             setError('');
         } catch (err) {
